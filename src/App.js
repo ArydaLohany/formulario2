@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+const formOpenBtn = document.querySelector("#form-open"),
+home = document.querySelector(".home"),
+formContainer = document.querySelector(".form_container"),
+formCloseBtn = document.querySelector(".form_close"),
+signupBtn = document.querySelector("#signup"),
+loginBtn = document.querySelector("#login"),
+pwShowHide = document.querySelector(".pw_hide");
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+formOpenBtn.addEventListener("click", () => home.classList.add("show"));
+formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
 
-export default App;
+pwShowHide.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let getPwInput = icon.parentElement.querySelector("input");
+        console.log(getPwInput);
+    })
+})
+
+signupBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    formContainer.classList.remove("active");
+});
+loginBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    formContainer.classList.add("active");
+});
