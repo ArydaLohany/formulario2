@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./App.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 <body>
@@ -25,7 +25,8 @@
 
     <section class="home">
     <div class="form_container">
-        <i class="uil uil-times form_close"></i>
+        <i class="uil uil-times" id="form_close"></i>
+
         <div class="form login_form">
             <form action="#">
                 <h2>Login</h2>
@@ -46,6 +47,7 @@
                     </span>
                     <a href="#" class="forgot_pw">Forgot password?</a>
                 </div>
+
                 <button class="button">Login Now</button>
                 <div class="login_signup">
                     Don't have an account yet? <a href="#" id="signup">Signup</a>
@@ -77,6 +79,51 @@
 
     </div>
     </section>
-    <script src="App.js"></script>
+    <script src="main2.js"></script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcsn.com/font-awesome/4.7.0/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>
+        <div class="card">
+            <h1> Login </h1>
+
+                <div class="label-float">
+                    <input type="text" id="nome" placeholder="nome..." required>
+                    <label id="labelNome" for="nome">Nome</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="text" id="usuarioCad" placeholder="@usuario" required>
+                    <label id="labelUsuario" for="usuarioCad">Usuario</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="password" id="senha" placeholder="senha..." required>
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <i id="verSenha" class="fa-duotone fa-eye-slash" aria-hiden="true"></i>
+                </div>
+
+                <div class="label-float">
+                    <input type="password" id="confirmSenha" placeholder=" " required>
+                    <label id="labelConfirmSenha" for="confirmSenha">Confirmar senha</label>
+                    <i id="verConfirmSenha" class="fa-duotone fa-eye-slash" aria-hidden="true"></i> 
+                </div>
+                <div class='justify-center'>
+                    <button onclick='logar()'>Login</button>
+                </div>
+                <p>Não tem uma conta? <a href=" ">Cadastre-se</a></p>
+        </div>
+    </div>
 </body>
 </html>
