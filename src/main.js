@@ -36,13 +36,12 @@ formCloseBtn.addEventListener("click", () => {
 });
 });*/
 
-let nome = document.querySelector('#nome');
+/*let nome = document.querySelector('#nome');
 let labelNome = document.querySelector('#labelNome');
 
 let usuario = document.querySelector('#usuarioCad');
 let labelUsuario = document.querySelector('#labelUsuario');
 let validUsuario = false;
-
 let validNome = false;
 
 let btn = document.querySelector('#verSenha');
@@ -115,7 +114,7 @@ confirmSenha.addEventListener('keyup', () => {
   }
 });
 
-function logar() {
+function login() {
   if (validNome && validUsuario && validSenha && validConfirmSenha) {
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
 
@@ -161,5 +160,22 @@ btnConfirm.addEventListener('click', () => {
   } else {
     inputConfirmSenha.setAttribute('type', 'password');
   }
+});*/
+
+const mode = docuent.getElementById('mode_icon');
+
+mode.addEventListener('click', () => {
+  const form = document.getElementById('login_form');
+  if(mode.classList.contains('fa-moon')) {
+    mode.classList.remove('fa-moon');
+    mode.classList.add('fa-sun');
+
+      form.classList.add('dark');
+    return
+  }
+
+  mode.classList.add('fa-moon');
+  mode.classList.remove('fa-sun');
+  form.classList.remove('dark');
 });
 
