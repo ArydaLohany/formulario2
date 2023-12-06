@@ -6,15 +6,24 @@
     --color-ba-50: rgb(26, 86, 197);
     --color-ba-100: rgb(69, 133, 250);
     --color-ba-200: yellow;
-    --color-gradient: linear-gradient(90deg, var(--color-ba-100), var(--color-purple-50), var(--color-ba-200));
+    --color-gradient: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-blue-200));
 }
 
 body {
     margin: 0;
+    display: flex;
+    height: 100vh;
 }
 
 body *{
     box-sizing: border-box;
+}
+
+body.dark{
+    background: #000;
+    margin: 0;
+    display: flex;
+    height: 100vh;
 }
 
 .main-login {
@@ -155,9 +164,15 @@ body *{
     color: var(--color-light-50);
 }
 
-#mode_icon {
+#mode_icon.fa-sun {
     cursor: pointer;
     font-size: 20px;
+    color: #cecdcf;
+}
+#mode_icon.fa-moon{
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
 }
 
 @keyframes dark-to-light{
@@ -176,4 +191,14 @@ body *{
     0%{
         background-color: var(--color-light-50);
     }
+}
+
+.label {
+    border-radius: 50px;
+    background-color: #000;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 5px;
+    transform: scale(1.5);
 }

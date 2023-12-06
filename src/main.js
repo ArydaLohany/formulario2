@@ -162,7 +162,7 @@ btnConfirm.addEventListener('click', () => {
   }
 });*/
 
-const mode = docuent.getElementById('mode_icon');
+const mode = document.getElementById('mode_icon');
 
 mode.addEventListener('click', () => {
   const form = document.getElementById('login_form');
@@ -178,4 +178,9 @@ mode.addEventListener('click', () => {
   mode.classList.remove('fa-sun');
   form.classList.remove('dark');
 });
+
+const mode_icon = document.getElementById('mode_icon')
+mode_icon .addEventListener('change', () => {
+  documet.body.classList.toggle('dark')
+})
 
