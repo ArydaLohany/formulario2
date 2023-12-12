@@ -3,9 +3,9 @@
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
     --color-dark-900: #000;
-    --color-ba-50: rgb(26, 86, 197);
-    --color-ba-100: rgb(69, 133, 250);
-    --color-ba-200: yellow;
+    --color-ba-50: rgb(0, 0, 0);
+    --color-ba-100: rgb(0, 0, 0);
+    --color-ba-200: rgb(255, 0, 212);
     --color-gradient: linear-gradient(90deg, var(--color-ba-50), var(--color-ba-100), var(--color-ba-200));
 }
 
@@ -13,18 +13,17 @@ body {
     margin: 0;
     display: flex;
     height: 100vh;
-}
-
-body *{
     box-sizing: border-box;
 }
 
-body.dark{
-    background: #000;
+.dark-mode {
     margin: 0;
     display: flex;
     height: 100vh;
+    color: #090d0f;
+    background: #223246;
 }
+
 
 .main-login {
     width: 100vw;
@@ -46,7 +45,6 @@ body.dark{
 .left-login > h1 {
     font-size: 3vw;
     color: #dbe3e9;
-
 }
 
 .right-login {
@@ -121,6 +119,17 @@ body.dark{
         box-shadow: 0px 10px 40px -12px rgb(255, 255, 255);
 }
 
+.func {
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+
+/*.left-login-image-dark .dark-mode {
+    width: 35vw;
+    align-items: baseline;
+}*/
+
 .left-login-image {
     width: 35vw;
     align-items: baseline;
@@ -169,10 +178,10 @@ body.dark{
     font-size: 20px;
     color: #cecdcf;
 }
-#mode_icon.fa-moon{
+#mode_icon.fa-moon {
     cursor: pointer;
     font-size: 20px;
-    color: #000;
+    color: #adadad;
 }
 
 @keyframes dark-to-light{

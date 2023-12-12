@@ -162,23 +162,28 @@ btnConfirm.addEventListener('click', () => {
   }
 });*/
 
-const mode_icon = document.getElementById('mode_icon');
+/*const mode_icon = document.getElementById('mode_icon');
 
 mode_icon.addEventListener('change', () => {
-  documet.body.classList.toggle('dark')
-  if(mode.classList.contains('fa-moon')) {
-    mode.classList.remove('fa-moon');
-    mode.classList.add('fa-sun');
+  document.body.classList.toggle('dark')
+  if(mode_icon.classList.contains('fa-moon')) {
+    mode_icon.classList.remove('fa-moon');
+    mode_icon.classList.add('fa-sun');
     form.classList.add('dark');
-    return
+    return;
   }
 
   mode.classList.add('fa-moon');
   mode.classList.remove('fa-sun');
   form.classList.remove('dark');
-});
+});*/
 
 /*const mode_icon = document.getElementById('mode_icon')
 mode_icon .addEventListener('change', () => {
-  documet.body.classList.toggle('dark')
+  document.body.classList.toggle('dark')
 })*/
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
