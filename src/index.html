@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-login">
-        <div class="left-login">
-            <h1> Faça login </h1>
-            <img src="login.animate.svg" class="left-login-image">
-            <button class="func" onclick="myFunction()">
-            <i id="mode_icon" class="fa-solid fa-moon" class="fa-solid fa-sun"></i>
-            </button>
-        </div>
-        <div class="right-login">
-            <div class="card-login">
-                <div class="textfield">
-                    <label for="usuario">Usuario
-                        <i class="fa-solid fa-user"></i></label>
-                    <input type="text" id="usuario" placeholder="usuario" required> 
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha <i class="fa-solid fa-key"></i></label>
-                    <input type="password" id="senha" placeholder="senha" required>
-                </div>
+      <div class="left-login">
+        <h1>Faça login</h1>
+        <img src="login.animate.svg" class="left-login-image" />
+        <button class="func" onclick="myFunction()">
+          <i
+            id="mode_icon"
+            class="fa-solid fa-moon"
+            class="fa-solid fa-sun"
+          ></i>
+        </button>
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <div class="textfield">
+            <label for="usuario"
+              >Usuario <i class="fa-solid fa-user"></i
+            ></label>
+            <input type="text" id="usuario" placeholder="usuario" required />
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha <i class="fa-solid fa-key"></i></label>
+            <input type="password" id="senha" placeholder="senha" required />
+          </div>
 
-                <div class="textfield">
-                    <label for="confirmSenha">Confirmar senha
-                         <i class="fa-solid fa-key"></i></label>
-                    <input type="password" id="confirmSenha" placeholder="confirme a senha" required>
-                </div>
+          <div class="textfield">
+            <label for="confirmSenha"
+              >Confirmar senha <i class="fa-solid fa-key"></i
+            ></label>
+            <input
+              type="password"
+              id="confirmSenha"
+              placeholder="confirme a senha"
+              required
+            />
+          </div>
 
-                <button class="btn-login">Login</button>
-            </div>
+          <button class="btn-login">Login</button>
         </div>
+      </div>
     </div>
     <script type="text/javascript" src="./main.js"></script>
-</body>
+  </body>
 </html>

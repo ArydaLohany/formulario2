@@ -44,7 +44,8 @@ body {
     align-items: center;
     flex-direction: column;
 }
-.left-login > h1 {
+
+.left-login>h1 {
     font-size: 3vw;
     color: #dbe3e9;
 }
@@ -70,8 +71,8 @@ body {
     box-shadow: 0px 10px 40px rgb(26, 120, 197);
 }
 
-.card-login > h1 {
-    color:#78b7e7;
+.card-login>h1 {
+    color: #78b7e7;
     font-weight: 800;
     margin: 0;
 }
@@ -84,7 +85,7 @@ body {
     margin: 10px 0px;
 }
 
-.textfield > input {
+.textfield>input {
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -97,29 +98,29 @@ body {
     box-sizing: border-box;
 }
 
-.textfield > label {
+.textfield>label {
     color: #6d8cb3;
     margin-top: 10px;
 }
 
-.textfield > input::placeholder {
-    color:#949b9b94;
+.textfield>input::placeholder {
+    color: #949b9b94;
 }
 
 .btn-login {
-        width: 100px;
-        padding: 16px 0px;
-        margin: 25px;
-        border: none;
-        border-radius: 8px;
-        outline: none;
-        text-transform: uppercase;
-        font-weight: 800px;
-        letter-spacing: 3px;
-        color: #dbe3e9;
-        background: #71a6eb;
-        cursor: pointer;
-        box-shadow: 0px 10px 40px -12px rgb(255, 255, 255);
+    width: 100px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800px;
+    letter-spacing: 3px;
+    color: #dbe3e9;
+    background: #71a6eb;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(255, 255, 255);
 }
 
 .func {
@@ -139,30 +140,35 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
-    .card-login{
+    .card-login {
         width: 85%;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .main-login{
+    .main-login {
         flex-direction: column;
     }
-    .left-login > h1{
+
+    .left-login>h1 {
         display: none;
     }
-    .left-login{
+
+    .left-login {
         width: 100%;
         height: auto;
     }
-    .right-login{
+
+    .right-login {
         width: 100%;
         height: auto;
     }
-    .left-login-image{
+
+    .left-login-image {
         width: 50vw;
     }
-    .card-login{
+
+    .card-login {
         width: 90;
     }
 }
@@ -171,8 +177,9 @@ body {
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
 }
+
 .dark#main-login .input-field input,
-.dark#main-login .input-field i{
+.dark#main-login .input-field i {
     color: var(--color-light-50);
 }
 
@@ -181,26 +188,29 @@ body {
     font-size: 20px;
     color: #cecdcf;
 }
+
 #mode_icon.fa-moon {
     cursor: pointer;
     font-size: 20px;
     color: #adadad;
 }
 
-@keyframes dark-to-light{
-    0%{
+@keyframes dark-to-light {
+    0% {
         background-color: var(--color-dark-100);
     }
-    100%{
+
+    100% {
         background-color: var(--color-light-50);
     }
 }
 
-@keyframes light-to-dark{
-    100%{
+@keyframes light-to-dark {
+    100% {
         background-color: var(--color-dark-100);
     }
-    0%{
+
+    0% {
         background-color: var(--color-light-50);
     }
 }
